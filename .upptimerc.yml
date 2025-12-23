@@ -25,8 +25,8 @@ status-website:
   baseUrl: /ChanganUpptime-v1
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: ChanganUpptime
-  introTitle: "ChanganUpptime is an open-source uptime monitor and status page for the Changan UK, NL, an DE websites"
-  introMessage: This status page which uses real-time data.
+  introTitle: "ChanganUpptime monitors and reports on the status of the Changan UK, NL, an DE websites"
+  introMessage: This page uses real-time data.
   navbar:
     - title: Status
       href: /
