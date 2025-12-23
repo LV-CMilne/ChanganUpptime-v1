@@ -59,7 +59,7 @@ status-website:
       --body-background-color: #ffffff;
     }
 
-    /* 1 & 3. Logo Positioning and Hiding Name */
+    /* 1 & 3. Logo Visibility and Hiding "Changan Europe Status" Text */
     nav .logo {
       position: absolute !important;
       left: 20px !important;
@@ -67,22 +67,21 @@ status-website:
       align-items: center !important;
     }
 
-    /* Specifically hides the "Changan Europe Status" text next to the logo */
     nav .logo div {
-      display: none !important;
+      display: none !important; /* Removes the repository name text */
     }
 
     nav .logo img {
-      height: 25px !important; /* Forces logo visibility */
+      height: 25px !important;
       width: auto !important;
-      filter: brightness(0) invert(1) !important; /* Backup: forces logo to white if SVG edit failed */
+      filter: brightness(0) invert(1) !important; /* Forces logo to white */
     }
 
-    /* 2 & 4. Restore and Style the Blue Header Box */
+    /* 2 & 4. Restore Centered Blue Header Box */
     header {
-      background-color: #ffffff !important; /* Page background stays white */
+      background-color: transparent !important;
       padding: 60px 0 !important;
-      display: block !important; /* Ensures the element isn't hidden */
+      display: block !important;
       visibility: visible !important;
     }
 
@@ -106,13 +105,15 @@ status-website:
       font-size: 1.1rem !important;
     }
 
-    /* Navbar Centering */
+    /* Center Navbar Buttons */
     nav {
       justify-content: center !important;
       padding: 15px 0 !important;
+      display: flex !important;
     }
 
     nav a:not(.logo) {
       font-weight: bold !important;
       margin: 0 20px !important;
+      text-transform: uppercase !important;
     }
