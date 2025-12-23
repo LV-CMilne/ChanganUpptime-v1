@@ -5,6 +5,14 @@ repo: ChanganUpptime-v1 # The name of this repository
 sites:
   - name: Changan UK
     url: https://www.changaneurope.com/uk
+  - name: Changan UK - Contact
+    url: https://www.changaneurope.com/uk/contact-us
+  - name: Changan UK - Privacy Policy
+    url: https://www.changaneurope.com/uk/privacy-policy
+  - name: Changan UK - Configurator
+    url: https://www.changaneurope.com/uk/configurator  
+  - name: Changan UK - Book a Test Drive
+    url: https://www.changaneurope.com/uk/models/changan-deepal-s07/test-drive  
   - name: Changan DE
     url: https://www.changaneurope.com/de
   - name: Changan NL
