@@ -3,6 +3,7 @@ owner: LV-CMilne # Your GitHub organization or username, where this repository l
 repo: ChanganUpptime-v1 # The name of this repository
 
 sites:
+# UK Sites
   - name: Changan UK
     url: https://www.changaneurope.com/uk
   - name: Changan UK - Contact
@@ -12,26 +13,75 @@ sites:
   - name: Changan UK - Configurator
     url: https://www.changaneurope.com/uk/configurator  
   - name: Changan UK - Book a Test Drive
-    url: https://www.changaneurope.com/uk/models/changan-deepal-s07/test-drive  
+    url: https://www.changaneurope.com/uk/models/changan-deepal-s07/test-drive
+ # DE Sites   
   - name: Changan DE
     url: https://www.changaneurope.com/de
+  - name: Changan DE - Contact
+    url: https://www.changaneurope.com/de/kontakt
+  - name: Changan DE - Privacy Policy
+    url: https://www.changaneurope.com/de/datenschutzerklarung
+  - name: Changan DE - Configurator
+    url: https://www.changaneurope.com/de/modellauswahl 
+  - name: Changan DE - Book a Test Drive
+    url: https://www.changaneurope.com/de/probefahrt
+  # NL Sites  
   - name: Changan NL
     url: https://www.changaneurope.com/nl
+  - name: Changan NL - Contact
+    url: https://www.changaneurope.com/nl/contact
+  - name: Changan NL - Privacy Policy
+    url: https://www.changaneurope.com/nl/privacybeleid
+  - name: Changan NL - Configurator
+    url: https://www.changaneurope.com/nl/model-chooser  
+  - name: Changan NL - Book a Test Drive
+    url: https://www.changaneurope.com/nl/proefrit
 
+    
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  # cname: demo.upptime.js.org
   baseUrl: /ChanganUpptime-v1
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: ChanganUpptime
-  introTitle: "ChanganUpptime monitors and reports on the status of the Changan UK, NL, an DE websites"
-  introMessage: This page uses real-time data.
+  logoUrl: https://www.changaneurope.com/static/version1709633634/frontend/Changan/default/en_GB/images/logo.svg
+  name: Changan Europe Status
+  introTitle: "Changan Europe Service Monitor"
+  introMessage: "Real-time monitoring and status updates for Changan Europe's digital platforms across the UK, Germany, and the Netherlands."
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: Changan Europe
+      href: https://www.changaneurope.com/uk/
+  css: |
+    :root {
+      --body-background-color: #f4f7f6;
+      --body-text-color: #333;
+      --card-background-color: #ffffff;
+      --nav-background-color: #002b5c; /* Changan Deep Blue */
+      --nav-text-color: #ffffff;
+      --nav-border-bottom-color: #001f42;
+      --primary-color: #002b5c;
+    }
+    .container { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    header { background-color: var(--nav-background-color); color: white; padding: 2rem 0; }
+    header a { color: white !important; }status-website:
+  baseUrl: /ChanganUpptime-v1
+  logoUrl: https://www.changaneurope.com/static/version1709633634/frontend/Changan/default/en_GB/images/logo.svg
+  name: Changan Europe Status
+  introTitle: "Changan Europe Service Monitor"
+  introMessage: "Real-time monitoring and status updates for Changan Europe's digital platforms across the UK, Germany, and the Netherlands."
+  navbar:
+    - title: Status
+      href: /
+    - title: Changan Europe
+      href: https://www.changaneurope.com/uk/
+  css: |
+    :root {
+      --body-background-color: #f4f7f6;
+      --body-text-color: #333;
+      --card-background-color: #ffffff;
+      --nav-background-color: #002b5c; /* Changan Deep Blue */
+      --nav-text-color: #ffffff;
+      --nav-border-bottom-color: #001f42;
+      --primary-color: #002b5c;
+    }
+    .container { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    header { background-color: var(--nav-background-color); color: white; padding: 2rem 0; }
+    header a { color: white !important; }
