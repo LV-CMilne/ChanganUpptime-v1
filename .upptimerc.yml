@@ -40,61 +40,54 @@ sites:
     
 status-website:
   baseUrl: /ChanganUpptime-v1
-  logoUrl: https://www.changaneurope.com/static/version1709633634/frontend/Changan/default/en_GB/images/logo.svg
+  logoUrl: https://raw.githubusercontent.com/LV-CMilne/ChanganUpptime-v1/master/assets/changan-logo.svg
   name: Changan Europe Status
   introTitle: "Changan Europe Service Monitor"
   introMessage: "Real-time monitoring and status updates for Changan Europe's digital platforms across the UK, Germany, and the Netherlands."
   navbar:
-    - title: Status
-      href: /
-    - title: Changan Europe
+    - title: UK
       href: https://www.changaneurope.com/uk/
+    - title: DE
+      href: https://www.changaneurope.com/de/
+    - title: NL
+      href: https://www.changaneurope.com/nl/
   css: |
     :root {
-      /* Brand Colors */
-      --primary-color: #002b5c; /* Changan Deep Blue */
-      --body-background-color: #f8f9fa;
-      --card-background-color: #ffffff;
+      --primary-color: #002b5c;
       --nav-background-color: #002b5c;
       --nav-text-color: #ffffff;
-      --body-text-color: #1a1a1a;
-      
-      /* Status Indicators */
-      --status-up: #28a745;
-      --status-down: #dc3545;
-      --status-degraded: #ffc107;
     }
 
-    /* Typography & Header */
-    body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-    
-    header { 
-      background-color: var(--nav-background-color); 
-      padding: 3rem 0;
-      border-bottom: 4px solid #001f42;
-    }
-    
-    header h1, header p { color: white; text-align: center; }
-
-    /* Modern Card Layout */
-    .card {
-      border: 1px solid #e1e4e8;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-      transition: transform 0.2s ease-in-out;
-      margin-bottom: 1.5rem;
+    /* Logo Positioning */
+    .nav-logo {
+      position: absolute;
+      left: 20px;
+      height: 35px; /* Adjust based on your SVG dimensions */
     }
 
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Center and Style Navbar Buttons */
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--nav-background-color);
     }
 
-    /* Progress & Uptime Bars */
-    .progress-bar { border-radius: 4px; height: 8px; }
-    
-    /* Tables & Links */
-    table { width: 100%; border-collapse: separate; border-spacing: 0 10px; }
-    th { color: var(--primary-color); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
-    a { color: var(--primary-color); font-weight: 600; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    nav a {
+      color: white !important;
+      font-weight: bold !important;
+      margin: 0 15px;
+      text-transform: uppercase;
+    }
+
+    /* Intro Message Padding */
+    header {
+      padding: 4rem 2rem; /* Increased padding for the blue box */
+    }
+
+    header p {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px; /* Internal padding for the text itself */
+      line-height: 1.6;
+    }
