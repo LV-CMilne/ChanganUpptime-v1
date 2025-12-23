@@ -62,26 +62,3 @@ status-website:
     .container { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
     header { background-color: var(--nav-background-color); color: white; padding: 2rem 0; }
     header a { color: white !important; }status-website:
-  baseUrl: /ChanganUpptime-v1
-  logoUrl: https://www.changaneurope.com/static/version1709633634/frontend/Changan/default/en_GB/images/logo.svg
-  name: Changan Europe Status
-  introTitle: "Changan Europe Service Monitor"
-  introMessage: "Real-time monitoring and status updates for Changan Europe's digital platforms across the UK, Germany, and the Netherlands."
-  navbar:
-    - title: Status
-      href: /
-    - title: Changan Europe
-      href: https://www.changaneurope.com/uk/
-  css: |
-    :root {
-      --body-background-color: #f4f7f6;
-      --body-text-color: #333;
-      --card-background-color: #ffffff;
-      --nav-background-color: #002b5c; /* Changan Deep Blue */
-      --nav-text-color: #ffffff;
-      --nav-border-bottom-color: #001f42;
-      --primary-color: #002b5c;
-    }
-    .container { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    header { background-color: var(--nav-background-color); color: white; padding: 2rem 0; }
-    header a { color: white !important; }
