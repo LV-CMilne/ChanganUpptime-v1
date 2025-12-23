@@ -40,7 +40,9 @@ sites:
     
 status-website:
   baseUrl: /ChanganUpptime-v1
-  logoUrl: https://raw.githubusercontent.com/LV-CMilne/ChanganUpptime-v1/master/assets/changan-logo.svg
+  # Points to the white version of the logo in your assets folder
+  logoUrl: https://raw.githubusercontent.com/LV-CMilne/ChanganUpptime-v1/master/assets/changan-logo-white.svg
+  # This name will now be hidden by CSS to clean up the navbar
   name: Changan Europe Status
   introTitle: "Changan Europe Service Monitor"
   introMessage: "Real-time monitoring and status updates for Changan Europe's digital platforms across the UK, Germany, and the Netherlands."
@@ -56,38 +58,62 @@ status-website:
       --primary-color: #002b5c;
       --nav-background-color: #002b5c;
       --nav-text-color: #ffffff;
+      --body-background-color: #ffffff; /* Restores white background */
     }
 
-    /* Logo Positioning */
+    /* 1. Logo Position (Top Left) */
     .nav-logo {
       position: absolute;
       left: 20px;
-      height: 35px; /* Adjust based on your SVG dimensions */
+      height: 30px;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
-    /* Center and Style Navbar Buttons */
+    /* 2. Remove "Changan Europe Status" text from navbar */
+    nav h1, nav .repo-name { 
+      display: none !important; 
+    }
+
+    /* 3. Navbar Styling (Centered buttons) */
     nav {
       display: flex;
       justify-content: center;
-      align-items: center;
-      background-color: var(--nav-background-color);
+      padding: 15px 0;
+      position: relative;
     }
 
     nav a {
       color: white !important;
       font-weight: bold !important;
-      margin: 0 15px;
+      margin: 0 20px;
       text-transform: uppercase;
+      font-size: 14px;
     }
 
-    /* Intro Message Padding */
+    /* 4. Centered Blue Header Box with Padding */
     header {
-      padding: 4rem 2rem; /* Increased padding for the blue box */
+      background-color: transparent; /* Makes the full-width header invisible */
+      padding: 50px 0;
     }
 
-    header p {
-      max-width: 800px;
+    header .container {
+      background-color: var(--nav-background-color);
+      padding: 40px 60px; /* Internal padding for text */
+      border-radius: 4px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 20px; /* Internal padding for the text itself */
-      line-height: 1.6;
+      text-align: center;
+    }
+
+    header h1, header p { 
+      color: white !important; 
+      margin: 10px 0;
+    }
+
+    /* Card styling adjustment for white background */
+    .card {
+      background-color: #ffffff;
+      border: 1px solid #eee;
+      margin-top: 20px;
     }
