@@ -60,22 +60,23 @@ status-website:
     }
 
     /* 1. Fix Logo Visibility & Position */
-    nav .container {
+    nav .container.svelte-a08hsz {
       max-width: 100% !important;
-      padding: 0 20px !important;
-      position: relative !important;
       display: flex !important;
       justify-content: center !important;
+      position: relative !important;
     }
 
-    nav a.logo {
+    nav .container > div {
       position: absolute !important;
       left: 20px !important;
       top: 50% !important;
       transform: translateY(-50%) !important;
+    }
+
+    nav a.logo {
       display: flex !important;
       align-items: center !important;
-      text-decoration: none !important;
     }
 
     nav a.logo div {
@@ -86,16 +87,19 @@ status-website:
       max-height: 25px !important;
       width: auto !important;
       display: block !important;
-      filter: brightness(0) invert(1) !important; /* Ensures logo is white */
+      filter: brightness(0) invert(1) !important; /* Forces logo to white */
     }
 
-    /* 2. Fix Green Backgrounds on Status Cards */
-    section, .card, .live-status, [class*="svelte-"] {
-      background-color: transparent !important;
+    /* 2. Fix Green Backgrounds - Target the '.up' class specifically */
+    article.up, .live-status article, .card, [class*="svelte-"] {
+      background-color: #ffffff !important;
+      background-image: none !important;
+      border: 1px solid #e1e4e8 !important;
+      color: #1a1a1a !important;
     }
 
-    /* 3. Re-Style the Service Monitor Box (Targeting your specific HTML) */
-    header {
+    /* 3. Re-Style the Service Monitor Box */
+    header.svelte-ngkazm {
       background-color: #ffffff !important;
       padding: 60px 20px !important;
       display: flex !important;
@@ -127,9 +131,8 @@ status-website:
     }
 
     /* 4. Center Navbar Buttons */
-    nav ul {
+    nav ul.svelte-a08hsz {
       display: flex !important;
-      list-style: none !important;
       margin: 0 !important;
       padding: 15px 0 !important;
     }
@@ -138,6 +141,5 @@ status-website:
       color: white !important;
       font-weight: bold !important;
       margin: 0 20px !important;
-      text-decoration: none !important;
       text-transform: uppercase !important;
     }
