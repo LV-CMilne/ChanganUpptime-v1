@@ -203,19 +203,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.changaneurope.com.ico",
     "slug": "changan-nl-contact",
     "status": "up",
-    "uptime": "99.91%",
-    "uptimeDay": "99.43%",
-    "uptimeWeek": "99.91%",
-    "uptimeMonth": "99.91%",
-    "uptimeYear": "99.91%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 836,
     "timeDay": 722,
     "timeWeek": 836,
     "timeMonth": 836,
     "timeYear": 836,
-    "dailyMinutesDown": {
-      "2025-12-29": 8
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Changan NL - Privacy Policy",
@@ -241,18 +239,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.changaneurope.com.ico",
     "slug": "changan-nl-configurator",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "uptime": "98.98%",
+    "uptimeDay": "93.68%",
+    "uptimeWeek": "98.98%",
+    "uptimeMonth": "98.98%",
+    "uptimeYear": "98.98%",
     "time": 734,
     "timeDay": 725,
     "timeWeek": 734,
     "timeMonth": 734,
     "timeYear": 734,
     "dailyMinutesDown": {
-      "2025-12-29": 0
+      "2025-12-30": 86,
+      "2025-12-29": 5
     }
   },
   {
@@ -261,18 +260,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/www.changaneurope.com.ico",
     "slug": "changan-nl-book-a-test-drive",
     "status": "up",
-    "uptime": "99.91%",
-    "uptimeDay": "99.43%",
-    "uptimeWeek": "99.91%",
-    "uptimeMonth": "99.91%",
-    "uptimeYear": "99.91%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 826,
     "timeDay": 828,
     "timeWeek": 826,
     "timeMonth": 826,
     "timeYear": 826,
-    "dailyMinutesDown": {
-      "2025-12-29": 8
-    }
+    "dailyMinutesDown": {}
   }
 ]
