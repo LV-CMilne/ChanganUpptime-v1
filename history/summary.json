@@ -43,19 +43,19 @@
     "url": "https://www.changaneurope.com/uk/privacy-policy",
     "icon": "https://icons.duckduckgo.com/ip3/www.changaneurope.com.ico",
     "slug": "changan-uk-privacy-policy",
-    "status": "up",
-    "uptime": "99.75%",
-    "uptimeDay": "97.75%",
-    "uptimeWeek": "99.68%",
-    "uptimeMonth": "99.75%",
-    "uptimeYear": "99.75%",
-    "time": 1039,
-    "timeDay": 1056,
-    "timeWeek": 980,
-    "timeMonth": 1039,
-    "timeYear": 1039,
+    "status": "down",
+    "uptime": "99.86%",
+    "uptimeDay": "98.70%",
+    "uptimeWeek": "99.81%",
+    "uptimeMonth": "99.86%",
+    "uptimeYear": "99.86%",
+    "time": 1027,
+    "timeDay": 987,
+    "timeWeek": 960,
+    "timeMonth": 1027,
+    "timeYear": 1027,
     "dailyMinutesDown": {
-      "2026-01-01": 33
+      "2026-01-01": 19
     }
   },
   {
