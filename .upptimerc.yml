@@ -52,7 +52,8 @@ status-website:
       href: https://www.changaneurope.com/de/
     - title: NL
       href: https://www.changaneurope.com/nl/
-  css: |
+
+css: |
     :root {
       --primary-color: #002b5c;
       --nav-background-color: #002b5c;
@@ -65,38 +66,75 @@ status-website:
       background-color: #ffffff !important;
     }
 
-    /* 1. Navbar & Logo Fix */
+    /* 1. Navbar Container Fix */
     nav {
-      justify-content: center !important;
+      background-color: var(--nav-background-color) !important;
       padding: 15px 0 !important;
+      display: flex !important;
+      justify-content: center !important;
       position: relative !important;
     }
 
-    nav .logo {
-      position: absolute !important;
-      left: 20px !important;
-      top: 50% !important;
-      transform: translateY(-50%) !important;
+    nav .container {
       display: flex !important;
       align-items: center !important;
+      justify-content: space-between !important; /* Spreads logo and links out */
+      width: 100% !important;
+      max-width: 1200px !important;
+      padding: 0 20px !important;
     }
-    
-    #sapper > nav > div > ul a {
-      color:aliceblue
+
+    /* 2. Logo Styling */
+    nav .logo {
+      display: flex !important;
+      align-items: center !important;
+      text-decoration: none !important;
     }
 
     nav .logo div {
-      display: none !important;
+      display: none !important; /* Hides the text "Changan Europe Status" */
     }
 
-    /* Force the SVG to have dimensions so it isn't 0px wide */
     nav .logo img {
-      width: 250px !important; 
+      width: 200px !important; /* Reduced slightly for better fit */
+      max-width: 40vw !important; /* Limits size based on screen width */
+      height: auto !important;
       display: block !important;
       filter: brightness(0) invert(1) !important;
     }
 
-    /* 2. Blue Header Box (Your Original Logic) */
+    /* 3. Navigation Links Styling */
+    #sapper > nav > div > ul {
+      display: flex !important;
+      list-style: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    #sapper > nav > div > ul a {
+      color: #ffffff !important;
+      font-weight: bold !important;
+      margin-left: 15px !important;
+      text-decoration: none !important;
+      font-size: 0.9rem !important;
+    }
+
+    /* 4. Desktop Specific Adjustment */
+    @media (min-width: 768px) {
+      nav .logo {
+        position: absolute !important;
+        left: 20px !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+      }
+      
+      #sapper > nav > div > ul a {
+        margin: 0 20px !important;
+        font-size: 1rem !important;
+      }
+    }
+
+    /* 5. Blue Header Box Logic (Unchanged) */
     header {
       background-color: #ffffff !important;
       padding: 60px 0 !important;
@@ -122,9 +160,4 @@ status-website:
       padding: 0 60px 40px 60px !important;
       border-radius: 0 0 8px 8px !important;
       font-size: 1.1rem !important;
-    }
-
-    nav a:not(.logo) {
-      font-weight: bold !important;
-      margin: 0 20px !important;
     }
