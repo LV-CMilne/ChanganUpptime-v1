@@ -51,7 +51,7 @@ status-website:
       href: https://www.changaneurope.com/de/
     - title: NL
       href: https://www.changaneurope.com/nl/
-css: |
+  css: |
     :root {
       --primary-color: #002b5c;
       --nav-background-color: #002b5c;
@@ -59,32 +59,30 @@ css: |
       --body-background-color: #ffffff;
     }
 
-    /* 1. Fix Logo Visibility and Dimensions */
+    /* 1 & 3. Logo Positioning and Hiding Name */
     nav .logo {
       position: absolute !important;
       left: 20px !important;
+      top: 50% !important; /* Added to center vertically in nav */
+      transform: translateY(-50%) !important; /* Added to center vertically in nav */
       display: flex !important;
       align-items: center !important;
-      height: 100% !important; /* Ensures the container doesn't collapse */
-      min-width: 150px !important; /* Prevents 0px width reporting */
+      height: 35px !important; /* Forces container height */
     }
 
-    /* Specifically targets the image element to force rendering */
-    nav .logo img {
-      height: 30px !important; /* Explicit height */
-      width: auto !important;  /* Maintains aspect ratio */
-      display: block !important;
-      opacity: 1 !important;
-      visibility: visible !important;
-      filter: brightness(0) invert(1) !important; /* Ensures logo is white */
-    }
-
-    /* Hides the text next to the logo as requested */
+    /* Specifically hides the "Changan Europe Status" text next to the logo */
     nav .logo div {
       display: none !important;
     }
 
-    /* 2. Style the Blue Header Box (Maintains your current design) */
+    nav .logo img {
+      height: 30px !important; /* Increased slightly for visibility */
+      width: auto !important;
+      display: block !important; /* Added to ensure it renders as a block */
+      filter: brightness(0) invert(1) !important; 
+    }
+
+    /* 2 & 4. Restore and Style the Blue Header Box */
     header {
       background-color: #ffffff !important; 
       padding: 60px 0 !important;
@@ -112,11 +110,11 @@ css: |
       font-size: 1.1rem !important;
     }
 
-    /* 3. Navbar Centering and Links */
+    /* Navbar Centering */
     nav {
       justify-content: center !important;
       padding: 15px 0 !important;
-      position: relative !important; /* Anchor for absolute logo */
+      position: relative !important; /* Added to ensure absolute logo anchors correctly */
     }
 
     nav a:not(.logo) {
