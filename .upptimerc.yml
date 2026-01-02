@@ -42,6 +42,7 @@ status-website:
   baseUrl: /ChanganUpptime-v1
   logoUrl: https://raw.githubusercontent.com/LV-CMilne/ChanganUpptime-v1/refs/heads/master/assets/changan-logo.svg
   name: Changan Europe Status
+  themeUrl: https://raw.githubusercontent.com/LV-CMilne/ChanganUpptime-v1/refs/heads/master/assets/customTheme.css
   introTitle: "Changan Europe Service Monitor"
   introMessage: "Real-time monitoring and status updates for Changan Europe's digital platforms across the UK, Germany, and the Netherlands."
   navbar:
