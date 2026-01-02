@@ -14,7 +14,7 @@ sites:
     url: https://www.changaneurope.com/uk/configurator  
   - name: Changan UK - Book a Test Drive
     url: https://www.changaneurope.com/uk/models/changan-deepal-s07/test-drive
- # DE Sites   
+# DE Sites    
   - name: Changan DE
     url: https://www.changaneurope.com/de
   - name: Changan DE - Contact
@@ -63,8 +63,11 @@ status-website:
     nav .logo {
       position: absolute !important;
       left: 20px !important;
+      top: 50% !important; /* Added to center vertically in nav */
+      transform: translateY(-50%) !important; /* Added to center vertically in nav */
       display: flex !important;
       align-items: center !important;
+      height: 35px !important; /* Forces container height */
     }
 
     /* Specifically hides the "Changan Europe Status" text next to the logo */
@@ -73,16 +76,17 @@ status-website:
     }
 
     nav .logo img {
-      height: 25px !important; /* Forces logo visibility */
+      height: 30px !important; /* Increased slightly for visibility */
       width: auto !important;
-      filter: brightness(0) invert(1) !important; /* Backup: forces logo to white if SVG edit failed */
+      display: block !important; /* Added to ensure it renders as a block */
+      filter: brightness(0) invert(1) !important; 
     }
 
     /* 2 & 4. Restore and Style the Blue Header Box */
     header {
-      background-color: #ffffff !important; /* Page background stays white */
+      background-color: #ffffff !important; 
       padding: 60px 0 !important;
-      display: block !important; /* Ensures the element isn't hidden */
+      display: block !important; 
       visibility: visible !important;
     }
 
@@ -110,6 +114,7 @@ status-website:
     nav {
       justify-content: center !important;
       padding: 15px 0 !important;
+      position: relative !important; /* Added to ensure absolute logo anchors correctly */
     }
 
     nav a:not(.logo) {
