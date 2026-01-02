@@ -81,9 +81,8 @@ status-website:
       align-items: center !important;
     }
     
-    #sapper > nav > div > div > a > img
-    {
-      
+    #sapper > nav > div > ul a {
+      color:aliceblue
     }
 
     nav .logo div {
