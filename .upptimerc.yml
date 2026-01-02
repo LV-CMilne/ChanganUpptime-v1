@@ -6,6 +6,8 @@ sites:
 # UK Sites
   - name: Changan UK
     url: https://www.changaneurope.com/uk
+  - name: Changan UK Fake Page
+    url: https://www.changaneurope.com/uk/fakepage  
   - name: Changan UK - Contact
     url: https://www.changaneurope.com/uk/contact-us
   - name: Changan UK - Privacy Policy
