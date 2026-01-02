@@ -79,6 +79,11 @@ status-website:
       display: flex !important;
       align-items: center !important;
     }
+    
+    #sapper > nav > div > div > a > img
+    {
+      
+    }
 
     nav .logo div {
       display: none !important;
@@ -86,8 +91,7 @@ status-website:
 
     /* Force the SVG to have dimensions so it isn't 0px wide */
     nav .logo img {
-      height: 30px !important;
-      width: 60px !important; 
+      width: 250px !important; 
       display: block !important;
       filter: brightness(0) invert(1) !important;
     }
