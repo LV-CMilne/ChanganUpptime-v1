@@ -59,79 +59,87 @@ css: |
       --body-background-color: #ffffff;
     }
 
-    /* Navbar Container Setup */
-    nav {
-      position: relative !important;
-      display: flex !important;
-      justify-content: center !important; /* Centers the UK/DE/NL links */
-      padding: 20px 0 !important;
-      height: 70px !important; /* Set a fixed height for consistency */
+    /* Fix for the Body Background */
+    body, #sapper {
+      background-color: #ffffff !important;
     }
 
-    /* 1. Logo Positioning (Left Aligned) */
+    /* Navbar Styling */
+    nav {
+      background-color: var(--nav-background-color) !important;
+      position: relative !important;
+      display: flex !important;
+      justify-content: center !important;
+      padding: 15px 0 !important;
+    }
+
+    /* Container alignment for center links */
+    nav .container {
+      display: flex !important;
+      justify-content: center !important;
+      width: 100% !important;
+      max-width: none !important;
+    }
+
+    /* Logo Positioning - Left Side */
     nav .logo {
       position: absolute !important;
-      left: 30px !important;
+      left: 40px !important;
       top: 50% !important;
       transform: translateY(-50%) !important;
       display: flex !important;
       align-items: center !important;
-      text-decoration: none !important;
     }
 
-    /* 2. Hide the "Changan Europe Status" text next to the logo */
+    /* Hide the text next to the logo */
     nav .logo div {
       display: none !important;
     }
 
-    /* 3. Logo Image Sizing */
+    /* Force the Logo Image to be visible and white */
     nav .logo img {
-      height: 22px !important; /* Adjusted to look like the main site */
+      height: 32px !important; /* Increased height for better visibility */
       width: auto !important;
-      /* If using the white SVG version, we don't need the filter, 
-         but keeping it as a safety measure won't hurt */
+      display: block !important;
+      /* Ensuring it appears white regardless of the source SVG state */
       filter: brightness(0) invert(1) !important; 
     }
 
-    /* 4. Navigation Links (UK, DE, NL) */
+    /* Navbar Links (UK, DE, NL) */
     nav ul {
+      display: flex !important;
       margin: 0 !important;
       padding: 0 !important;
       list-style: none !important;
-      display: flex !important;
     }
 
-    nav a:not(.logo) {
-      font-weight: 700 !important;
-      margin: 0 25px !important;
-      font-size: 14px !important;
-      text-transform: uppercase !important;
-      letter-spacing: 1px !important;
+    nav ul li a {
+      color: #ffffff !important;
+      font-weight: bold !important;
+      margin: 0 20px !important;
+      text-decoration: none !important;
     }
 
-    /* 5. Header / Intro Box Styling */
-    header {
-      background-color: #ffffff !important;
-      padding: 60px 0 !important;
+    /* Restore the Blue Header Box */
+    header.svelte-ngkazm {
+      background-color: transparent !important;
+      padding: 40px 0 !important;
     }
 
     header h1, header p {
       background-color: var(--nav-background-color) !important;
       color: #ffffff !important;
       margin: 0 auto !important;
-      max-width: 900px !important;
+      max-width: 800px !important;
       text-align: center !important;
     }
 
     header h1 {
-      padding: 45px 60px 10px 60px !important;
-      border-radius: 12px 12px 0 0 !important;
-      font-size: 2.2rem !important;
+      padding: 40px 40px 10px 40px !important;
+      border-radius: 8px 8px 0 0 !important;
     }
 
     header p {
-      padding: 0 60px 45px 60px !important;
-      border-radius: 0 0 12px 12px !important;
-      font-size: 1.1rem !important;
-      line-height: 1.6 !important;
+      padding: 0 40px 40px 40px !important;
+      border-radius: 0 0 8px 8px !important;
     }
