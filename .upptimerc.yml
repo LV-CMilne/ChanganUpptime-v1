@@ -51,7 +51,7 @@ status-website:
       href: https://www.changaneurope.com/de/
     - title: NL
       href: https://www.changaneurope.com/nl/
- css: |
+css: |
     :root {
       --primary-color: #002b5c;
       --nav-background-color: #002b5c;
