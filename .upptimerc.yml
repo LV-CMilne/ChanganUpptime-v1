@@ -52,65 +52,59 @@ status-website:
     - title: NL
       href: https://www.changaneurope.com/nl/
 css: |
-    :root {
-      --primary-color: #002b5c;
-      --nav-background-color: #002b5c;
-      --nav-text-color: #ffffff;
-      --body-background-color: #ffffff;
-    }
-
-    /* Fix for the Body Background */
-    body, #sapper {
+    /* 1. Global Reset to Light Mode */
+    :root, html, body, #sapper {
+      --body-background-color: #ffffff !important;
       background-color: #ffffff !important;
+      color: #333333 !important;
     }
 
-    /* Navbar Styling */
-    nav {
-      background-color: var(--nav-background-color) !important;
+    /* 2. Navbar & Logo Alignment */
+    nav.svelte-a08hsz {
+      background-color: #002b5c !important;
+      padding: 15px 0 !important;
       position: relative !important;
       display: flex !important;
       justify-content: center !important;
-      padding: 15px 0 !important;
+      border-bottom: none !important;
     }
 
-    /* Container alignment for center links */
     nav .container {
       display: flex !important;
       justify-content: center !important;
+      align-items: center !important;
       width: 100% !important;
-      max-width: none !important;
+      max-width: 1200px !important;
     }
 
-    /* Logo Positioning - Left Side */
+    /* Positioning the logo on the far left */
     nav .logo {
       position: absolute !important;
-      left: 40px !important;
-      top: 50% !important;
-      transform: translateY(-50%) !important;
+      left: 20px !important;
       display: flex !important;
       align-items: center !important;
     }
 
-    /* Hide the text next to the logo */
+    /* Hide the text "Changan Europe Status" next to the logo */
     nav .logo div {
       display: none !important;
     }
 
-    /* Force the Logo Image to be visible and white */
+    /* Adjust the SVG logo size and visibility */
     nav .logo img {
-      height: 32px !important; /* Increased height for better visibility */
+      height: 35px !important; /* Increased for visibility */
       width: auto !important;
+      filter: brightness(0) invert(1) !important; /* Forces it to white */
+      opacity: 1 !important;
       display: block !important;
-      /* Ensuring it appears white regardless of the source SVG state */
-      filter: brightness(0) invert(1) !important; 
     }
 
-    /* Navbar Links (UK, DE, NL) */
+    /* 3. Navbar Links (UK, DE, NL) */
     nav ul {
       display: flex !important;
+      list-style: none !important;
       margin: 0 !important;
       padding: 0 !important;
-      list-style: none !important;
     }
 
     nav ul li a {
@@ -118,28 +112,42 @@ css: |
       font-weight: bold !important;
       margin: 0 20px !important;
       text-decoration: none !important;
+      font-size: 1rem !important;
     }
 
-    /* Restore the Blue Header Box */
+    /* 4. Restore Blue Header "Box" */
     header.svelte-ngkazm {
       background-color: transparent !important;
-      padding: 40px 0 !important;
+      padding: 60px 0 20px 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
     }
 
-    header h1, header p {
-      background-color: var(--nav-background-color) !important;
+    header h1 {
+      background-color: #002b5c !important;
       color: #ffffff !important;
-      margin: 0 auto !important;
+      margin: 0 !important;
+      padding: 60px 80px 10px 80px !important;
+      border-radius: 12px 12px 0 0 !important;
+      width: 100% !important;
       max-width: 800px !important;
       text-align: center !important;
     }
 
-    header h1 {
-      padding: 40px 40px 10px 40px !important;
-      border-radius: 8px 8px 0 0 !important;
+    header p.lead {
+      background-color: #002b5c !important;
+      color: #ffffff !important;
+      margin: 0 !important;
+      padding: 0 80px 60px 80px !important;
+      border-radius: 0 0 12px 12px !important;
+      width: 100% !important;
+      max-width: 800px !important;
+      text-align: center !important;
+      line-height: 1.6 !important;
     }
 
-    header p {
-      padding: 0 40px 40px 40px !important;
-      border-radius: 0 0 8px 8px !important;
+    /* 5. Live Status & Tables Reset */
+    .live-status, article.up, h2 {
+      color: #333333 !important;
     }
