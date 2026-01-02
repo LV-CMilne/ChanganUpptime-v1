@@ -51,8 +51,7 @@ status-website:
       href: https://www.changaneurope.com/de/
     - title: NL
       href: https://www.changaneurope.com/nl/
-
-css: |
+  css: |
     :root {
       --primary-color: #002b5c;
       --nav-background-color: #002b5c;
@@ -60,42 +59,30 @@ css: |
       --body-background-color: #ffffff;
     }
 
-    /* 1. Navbar & Logo Positioning */
-    nav {
-      justify-content: center !important;
-      position: relative !important;
-    }
-
-    /* Position the logo anchor on the far left */
-    nav .logo.svelte-a08hsz {
+    /* 1 & 3. Logo Positioning and Hiding Name */
+    nav .logo {
       position: absolute !important;
       left: 20px !important;
-      top: 50% !important;
-      transform: translateY(-50%) !important;
       display: flex !important;
       align-items: center !important;
-      height: 100% !important;
     }
 
-    /* Force the SVG image to be visible */
-    nav .logo img.svelte-a08hsz {
-      display: block !important;
-      height: 30px !important; /* Adjust this to change logo size */
-      width: auto !important;
-      min-width: 10px !important;
-      filter: brightness(0) invert(1) !important; /* Keeps logo white */
-    }
-
-    /* Hide the "Changan Europe Status" text next to the logo */
+    /* Specifically hides the "Changan Europe Status" text next to the logo */
     nav .logo div {
       display: none !important;
     }
 
-    /* 2. Restore and Style the Blue Header Box (Original Logic) */
+    nav .logo img {
+      height: 25px !important; /* Forces logo visibility */
+      width: auto !important;
+      filter: brightness(0) invert(1) !important; /* Backup: forces logo to white if SVG edit failed */
+    }
+
+    /* 2 & 4. Restore and Style the Blue Header Box */
     header {
-      background-color: #ffffff !important;
+      background-color: #ffffff !important; /* Page background stays white */
       padding: 60px 0 !important;
-      display: block !important;
+      display: block !important; /* Ensures the element isn't hidden */
       visibility: visible !important;
     }
 
@@ -119,7 +106,12 @@ css: |
       font-size: 1.1rem !important;
     }
 
-    /* Navbar Link Spacing */
+    /* Navbar Centering */
+    nav {
+      justify-content: center !important;
+      padding: 15px 0 !important;
+    }
+
     nav a:not(.logo) {
       font-weight: bold !important;
       margin: 0 20px !important;
