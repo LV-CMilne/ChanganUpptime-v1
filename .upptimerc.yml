@@ -52,7 +52,7 @@ status-website:
       href: https://www.changaneurope.com/de/
     - title: NL
       href: https://www.changaneurope.com/nl/
-css: |
+  css: |
     :root {
       --primary-color: #002b5c;
       --nav-background-color: #002b5c;
@@ -60,89 +60,48 @@ css: |
       --body-background-color: #ffffff;
     }
 
-    /* Force page background to white */
+    /* FIX: Force white background to prevent theme fallback */
     body, #sapper {
       background-color: #ffffff !important;
     }
 
-    /* 1. Navigation Bar Styling (Blue Background) */
+    /* 1. Navbar & Logo Fix */
     nav {
-      background-color: var(--nav-background-color) !important;
+      justify-content: center !important;
       padding: 15px 0 !important;
       position: relative !important;
-      display: flex !important;
-      justify-content: center !important;
     }
 
-    /* Standardizes the internal container for mobile spacing */
-    nav .container {
-      display: flex !important;
-      align-items: center !important;
-      justify-content: space-between !important; 
-      width: 100% !important;
-      max-width: 1200px !important;
-      padding: 0 20px !important;
-    }
-
-    /* 2. Responsive Logo Styling */
     nav .logo {
+      position: absolute !important;
+      left: 20px !important;
+      top: 50% !important;
+      transform: translateY(-50%) !important;
       display: flex !important;
       align-items: center !important;
-      text-decoration: none !important;
-      /* Removes absolute positioning on mobile to prevent overlap */
-      position: relative !important; 
-      left: 0 !important;
-      transform: none !important;
-      top: 0 !important;
+    }
+    
+    #sapper > nav > div > ul a {
+      color:aliceblue
     }
 
     nav .logo div {
-      display: none !important; /* Hides "Changan Europe Status" text */
+      display: none !important;
     }
 
+    /* Force the SVG to have dimensions so it isn't 0px wide */
     nav .logo img {
-      /* Fluid width: Min 120px, scales with screen, Max 220px */
-      width: clamp(120px, 30vw, 220px) !important; 
-      height: auto !important;
+      width: 250px !important; 
       display: block !important;
       filter: brightness(0) invert(1) !important;
     }
 
-    /* 3. White Navigation Links */
-    #sapper > nav ul {
-      display: flex !important;
-      list-style: none !important;
-      margin: 0 !important;
-      padding: 0 !important;
-    }
-
-    #sapper > nav ul li a {
-      color: #ffffff !important; /* Explicitly forces white links */
-      font-weight: bold !important;
-      margin-left: 15px !important;
-      text-decoration: none !important;
-      font-size: 0.9rem !important;
-    }
-
-    /* 4. Desktop Adjustments (Screens wider than 768px) */
-    @media (min-width: 768px) {
-      nav .logo {
-        position: absolute !important;
-        left: 20px !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-      }
-      
-      #sapper > nav ul li a {
-        margin: 0 20px !important;
-        font-size: 1rem !important;
-      }
-    }
-
-    /* 5. Blue Service Monitor Box (Original Design) */
+    /* 2. Blue Header Box (Your Original Logic) */
     header {
       background-color: #ffffff !important;
       padding: 60px 0 !important;
+      display: block !important;
+      visibility: visible !important;
     }
 
     header h1, header p {
@@ -163,4 +122,9 @@ css: |
       padding: 0 60px 40px 60px !important;
       border-radius: 0 0 8px 8px !important;
       font-size: 1.1rem !important;
+    }
+
+    nav a:not(.logo) {
+      font-weight: bold !important;
+      margin: 0 20px !important;
     }
