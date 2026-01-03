@@ -94,11 +94,9 @@ status-website:
       max-width: 50vw !important; 
       overflow: hidden !important;
     }
-
-   #sapper > nav ul li {
-     display: flex !important;
+    #sapper > nav ul li {
+      display: flex !important;
     }
-    
     #sapper > nav ul li a {
       color: #ffffff !important; /* White links */
       font-weight: bold !important;
