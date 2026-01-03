@@ -84,6 +84,16 @@ status-website:
     #sapper > nav > div > ul a {
       color:aliceblue
     }
+    /* 3. Navigation Links (Left Aligned & Responsive) */
+    #sapper > nav ul {
+      display: flex !important;
+      list-style: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      /* Responsive width for the links group */
+      max-width: 50vw !important; 
+      overflow: hidden !important;
+    }
 
     nav .logo div {
       display: none !important;
