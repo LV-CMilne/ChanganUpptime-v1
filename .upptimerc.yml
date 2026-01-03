@@ -91,6 +91,7 @@ status-website:
 
     /* Force the SVG to have dimensions so it isn't 0px wide */
     nav .logo img {
+      max-width: 35vw;
       width: 250px !important; 
       display: block !important;
       filter: brightness(0) invert(1) !important;
