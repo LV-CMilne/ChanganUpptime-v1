@@ -96,9 +96,9 @@ status-website:
     }
 
    #sapper > nav ul li {
-      display: flex !important;
+     display: flex !important;
     }
-
+    
     #sapper > nav ul li a {
       color: #ffffff !important; /* White links */
       font-weight: bold !important;
