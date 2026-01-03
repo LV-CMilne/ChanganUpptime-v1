@@ -95,6 +95,19 @@ status-website:
       overflow: hidden !important;
     }
 
+   #sapper > nav ul li {
+      display: flex !important;
+    }
+
+    #sapper > nav ul li a {
+      color: #ffffff !important; /* White links */
+      font-weight: bold !important;
+      margin-right: 15px !important; /* Spacing between UK, DE, NL */
+      text-decoration: none !important;
+      font-size: clamp(0.8rem, 3vw, 1rem) !important; /* Text also scales with screen */
+      white-space: nowrap !important;
+    } 
+
     nav .logo div {
       display: none !important;
     }
