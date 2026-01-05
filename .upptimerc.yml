@@ -46,12 +46,14 @@ status-website:
   introTitle: "Changan Europe Service Monitor"
   introMessage: "Real-time monitoring and status updates for Changan Europe's digital platforms across the UK, Germany, and the Netherlands."
   navbar:
-    - title: UK
-      href: https://www.changaneurope.com/uk/
-    - title: DE
-      href: https://www.changaneurope.com/de/
-    - title: NL
-      href: https://www.changaneurope.com/nl/
+      - title: Regions
+        children:
+          - title: UK
+            href: https://www.changaneurope.com/uk/
+          - title: DE
+            href: https://www.changaneurope.com/de/
+          - title: NL
+            href: https://www.changaneurope.com/nl/
   css: |
     :root {
       --primary-color: #002b5c;
