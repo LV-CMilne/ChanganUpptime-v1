@@ -14,7 +14,7 @@ sites:
     url: https://www.changaneurope.com/uk/configurator  
   - name: Changan UK - Book a Test Drive
     url: https://www.changaneurope.com/uk/models/changan-deepal-s07/test-drive
-# DE Sites    
+# DE Sites     
   - name: Changan DE
     url: https://www.changaneurope.com/de
   - name: Changan DE - Contact
@@ -67,8 +67,8 @@ status-website:
 
     /* 1. Navbar & Logo Fix */
     nav {
-      justify-content: center !important;
-      padding: 15px 0 !important;
+      justify-content: flex-end !important; /* Changed to flex-end to keep links away from left-aligned logo */
+      padding: 15px 20px !important;
       position: relative !important;
     }
 
@@ -90,19 +90,20 @@ status-website:
       list-style: none !important;
       margin: 0 !important;
       padding: 0 !important;
-      /* Responsive width for the links group */
-      max-width: 50vw !important; 
-      overflow: hidden !important;
+      max-width: 60vw !important; 
+      overflow: visible !important;
     }
     #sapper > nav ul li {
       display: flex !important;
     }
     #sapper > nav ul li a {
-      color: #ffffff !important; /* White links */
+      color: #ffffff !important; 
       font-weight: bold !important;
-      margin-right: 15px !important; /* Spacing between UK, DE, NL */
+      /* Dynamic margin: scales between 5px and 20px based on screen size */
+      margin-left: clamp(5px, 2vw, 20px) !important; 
+      margin-right: 0 !important;
       text-decoration: none !important;
-      font-size: clamp(0.8rem, 3vw, 1rem) !important; /* Text also scales with screen */
+      font-size: clamp(0.75rem, 2.5vw, 1rem) !important; 
       white-space: nowrap !important;
     } 
 
@@ -112,7 +113,7 @@ status-website:
 
     /* Force the SVG to have dimensions so it isn't 0px wide */
     nav .logo img {
-      max-width: 35vw;
+      max-width: 30vw !important; /* Slightly smaller to give links more room on mobile */
       width: 250px !important; 
       display: block !important;
       filter: brightness(0) invert(1) !important;
@@ -148,5 +149,4 @@ status-website:
 
     nav a:not(.logo) {
       font-weight: bold !important;
-      margin: 0 20px !important;
     }
