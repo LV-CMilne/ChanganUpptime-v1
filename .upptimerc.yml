@@ -48,10 +48,13 @@ status-website:
   navbar:
     - title: UK
       href: https://www.changaneurope.com/uk/
+      target: _top
     - title: DE
       href: https://www.changaneurope.com/de/
+      target: _top
     - title: NL
       href: https://www.changaneurope.com/nl/
+      target: _top
   css: |
     :root {
       --primary-color: #002b5c;
