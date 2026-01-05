@@ -14,7 +14,7 @@ sites:
     url: https://www.changaneurope.com/uk/configurator  
   - name: Changan UK - Book a Test Drive
     url: https://www.changaneurope.com/uk/models/changan-deepal-s07/test-drive
-# DE Sites     
+# DE Sites    
   - name: Changan DE
     url: https://www.changaneurope.com/de
   - name: Changan DE - Contact
@@ -46,14 +46,12 @@ status-website:
   introTitle: "Changan Europe Service Monitor"
   introMessage: "Real-time monitoring and status updates for Changan Europe's digital platforms across the UK, Germany, and the Netherlands."
   navbar:
-    - title: Regions
-      children:
-        - title: UK
-          href: https://www.changaneurope.com/uk/
-        - title: DE
-          href: https://www.changaneurope.com/de/
-        - title: NL
-          href: https://www.changaneurope.com/nl/
+    - title: UK
+      href: https://www.changaneurope.com/uk/
+    - title: DE
+      href: https://www.changaneurope.com/de/
+    - title: NL
+      href: https://www.changaneurope.com/nl/
   css: |
     :root {
       --primary-color: #002b5c;
