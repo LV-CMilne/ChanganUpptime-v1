@@ -55,7 +55,7 @@ status-website:
     - title: NL
       href: https://www.changaneurope.com/nl/
       target: _top
-  css: |
+css: |
     :root {
       --primary-color: #002b5c;
       --nav-background-color: #002b5c;
@@ -70,9 +70,12 @@ status-website:
 
     /* 1. Navbar & Logo Fix */
     nav {
-      justify-content: flex-end !important; /* Changed to flex-end to keep links away from left-aligned logo */
+      justify-content: flex-end !important; 
       padding: 15px 20px !important;
       position: relative !important;
+      display: flex !important;
+      align-items: center !important;
+      min-height: 60px !important;
     }
 
     nav .logo {
@@ -82,47 +85,49 @@ status-website:
       transform: translateY(-50%) !important;
       display: flex !important;
       align-items: center !important;
+      /* Restrict logo width on mobile so it doesn't hit links */
+      max-width: 45% !important; 
     }
-    
-    #sapper > nav > div > ul a {
-      color:aliceblue
-    }
-    /* 3. Navigation Links (Left Aligned & Responsive) */
-    #sapper > nav ul {
-      display: flex !important;
-      list-style: none !important;
-      margin: 0 !important;
-      padding: 0 !important;
-      max-width: 60vw !important; 
-      overflow: visible !important;
-    }
-    #sapper > nav ul li {
-      display: flex !important;
-    }
-    #sapper > nav ul li a {
-      color: #ffffff !important; 
-      font-weight: bold !important;
-      /* Dynamic margin: scales between 5px and 20px based on screen size */
-      margin-left: clamp(15px, 2vw, 20px) !important; 
-      margin-right: 0 !important;
-      text-decoration: none !important;
-      font-size: clamp(0.75rem, 2.5vw, 1rem) !important; 
-      white-space: nowrap !important;
-    } 
 
     nav .logo div {
       display: none !important;
     }
 
-    /* Force the SVG to have dimensions so it isn't 0px wide */
+    /* Force the SVG to be responsive and white */
     nav .logo img {
-      max-width: 30vw !important; /* Slightly smaller to give links more room on mobile */
-      width: 250px !important; 
+      width: 100% !important; 
+      max-width: 250px !important; 
+      height: auto !important;
       display: block !important;
       filter: brightness(0) invert(1) !important;
     }
 
-    /* 2. Blue Header Box (Your Original Logic) */
+    /* 2. Navigation Links */
+    #sapper > nav ul {
+      display: flex !important;
+      list-style: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      margin-left: auto !important;
+      z-index: 10 !important;
+    }
+
+    #sapper > nav ul li {
+      display: flex !important;
+    }
+
+    #sapper > nav ul li a {
+      color: #ffffff !important; 
+      font-weight: bold !important;
+      /* Responsive spacing between links */
+      margin-left: clamp(10px, 2vw, 20px) !important; 
+      text-decoration: none !important;
+      /* Responsive font size */
+      font-size: clamp(0.75rem, 2.5vw, 1rem) !important; 
+      white-space: nowrap !important;
+    }
+
+    /* 3. Header Styling */
     header {
       background-color: #ffffff !important;
       padding: 60px 0 !important;
@@ -149,7 +154,7 @@ status-website:
       border-radius: 0 0 8px 8px !important;
       font-size: 1.1rem !important;
     }
-
+    
     nav a:not(.logo) {
       font-weight: bold !important;
     }
