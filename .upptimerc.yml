@@ -7,7 +7,7 @@ sites:
   - name: Changan UK
     url: https://www.changaneurope.com/uk
   - name: Changan UK - Contact
-    url: https://www.changaneurope.com/uk/contact-us
+    url: https://www.changaneurope.com/uk/contact-us/fake
   - name: Changan UK - Privacy Policy
     url: https://www.changaneurope.com/uk/privacy-policy
   - name: Changan UK - Configurator
@@ -46,7 +46,7 @@ notifications:
     user: "$SES_USER"
     pass: "$SES_PASS"
     from: "Upptime <changan.noreply@launchvox.com>"
-    to: "cmilne@launchvox.com, iberget@launchvox.com"
+    to: "cmilne@launchvox.com"
     isHtml: true
     
 status-website:
