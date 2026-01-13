@@ -36,7 +36,17 @@ sites:
     url: https://www.changaneurope.com/nl/model-chooser  
   - name: Changan NL - Book a Test Drive
     url: https://www.changaneurope.com/nl/proefrit
-
+    
+# .upptimerc.yml configuration
+notifications:
+  - type: mail
+    host: email-smtp.us-east-1.amazonaws.com # Replace with your region endpoint
+    port: 587
+    secure: false # Use false for port 587 (STARTTLS)
+    user: "$SES_USER"
+    pass: "$SES_PASS"
+    from: "Upptime <changan.noreply@launchvox.com>"
+    to: "cmilne@launchvox.com, iberget@launchvox.com"
     
 status-website:
   baseUrl: /ChanganUpptime-v1
