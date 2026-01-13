@@ -47,6 +47,7 @@ notifications:
     pass: "$SES_PASS"
     from: "Upptime <changan.noreply@launchvox.com>"
     to: "cmilne@launchvox.com, iberget@launchvox.com"
+    isHtml: true
     
 status-website:
   baseUrl: /ChanganUpptime-v1
