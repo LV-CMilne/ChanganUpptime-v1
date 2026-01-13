@@ -73,8 +73,8 @@
     "slug": "changan-uk-configurator",
     "status": "up",
     "uptime": "99.31%",
-    "uptimeDay": "99.84%",
-    "uptimeWeek": "98.33%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "98.35%",
     "uptimeMonth": "99.31%",
     "uptimeYear": "99.31%",
     "time": 1278,
@@ -83,7 +83,6 @@
     "timeMonth": 1278,
     "timeYear": 1278,
     "dailyMinutesDown": {
-      "2026-01-13": 2,
       "2026-01-12": 167,
       "2026-01-02": 24,
       "2026-01-01": 19
