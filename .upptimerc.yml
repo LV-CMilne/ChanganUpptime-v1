@@ -36,19 +36,7 @@ sites:
     url: https://www.changaneurope.com/nl/model-chooser  
   - name: Changan NL - Book a Test Drive
     url: https://www.changaneurope.com/nl/proefrit
-    
-# .upptimerc.yml configuration
-notifications:
-  - type: mail
-    host: "$NOTIFICATION_EMAIL_SMTP_HOST"
-    port: "$NOTIFICATION_EMAIL_SMTP_PORT"
-    secure: false
-    user: "$NOTIFICATION_EMAIL_SMTP_USERNAME"
-    pass: "$NOTIFICATION_EMAIL_SMTP_PASSWORD"
-    from: "Upptime <changan.noreply@launchvox.com>"
-    to: "cmilne@launchvox.com"
-    isHtml: true
-    
+
 status-website:
   baseUrl: /ChanganUpptime-v1
   logoUrl: https://raw.githubusercontent.com/LV-CMilne/ChanganUpptime-v1/refs/heads/master/assets/changan-logo.svg
