@@ -5,7 +5,7 @@ repo: ChanganUpptime-v1 # The name of this repository
 sites:
 # UK Sites
   - name: Changan UK
-    url: https://www.changaneurope.com/uk/fake-site
+    url: https://www.changaneurope.com/uk
   - name: Changan UK - Contact
     url: https://www.changaneurope.com/uk/contact-us
   - name: Changan UK - Privacy Policy
